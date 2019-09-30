@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/registro.css" rel="stylesheet" type="text/css"/>        
+    </head>
+
+    <body>
+
+        <!-- Contenedor superior -->
+        <div id="cnt_superior">
+            <div id="cnt_superior_izquierda">
+                <img src="img/facebook-logo-1.png" id="img_facebook_logo"/>
+            </div>
+            <div id="cnt_superior_derecha">
+                <table id="tbl_iniciar_sesion">
+                    <tbody>
+                        <tr>
+                            <td><label class="texto_acceso">Correo electrónico o teléfono</label></td>
+                            <td><label class="texto_acceso">Contraseña</label></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="mail" class="datos_acceso" id="usuario"></td>
+                            <td><input type="password" class="datos_acceso" id="contrasena"></td>
+                            <td><input type="button" class="datos_acceso" id="btn_entrar" value="Entrar"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><label id="lbl_olvidar_datos">¿Has olvidado los datos de la cuenta?</label></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Contenedor central -->        
+        <div id="cnt_central">
+            <div id="cnt_central_izquierda">       
+                <div id="cnt_central_izquierda_contenido">
+                    <p id="p_texto_informacion">Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
+                    <img src="img/fondo_portada.png" id="img_fondo_portada"/>
+                </div>
+            </div>
+            <div id="cnt_central_derecha">
+                <div id="cnt_titulo_registrar"><label>Registrarte</label></div>
+                <div id="cnt_texto_registrar"><label>Es rápido y fácil.</label></div>
+                <div><input type="text" class="nombre_apellido" id="nombre" placeholder="Nombre"></div>
+                <div><input type="text" class="nombre_apellido" id="apellidos" placeholder="Apellidos"></div>
+                <div><input type="text" class="numero_contrasena" id="numero" placeholder="Número de móvil o correo electrónico"></div>
+                <div><input type="text" class="numero_contrasena" id="contrasena" placeholder="Contraseña nueva"></div>
+                <div class="nacimiento_genero"><label>Fecha de nacimiento</label></div>
+                <div id="cnt_fecha">
+                    <div>
+                        <select class="fecha" id="dia">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select
+                        ><select class="fecha" id="mes">
+                            <option value="enero">ene</option>
+                            <option value="febrero">feb</option>
+                            <option value="marzo">mar</option>
+                            <option value="abril">abr</option>
+                            <option value="mayo">may</option>
+                        </select
+                        ><select class="fecha" id="ano">
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </div>
+                    <div><img src="img/duda.png" class="img_duda"></div>          
+                </div>
+                <div class="nacimiento_genero"><label>Género</label></div>
+                <div id="cnt_genero">
+                    <div>
+                        <input type="radio">
+                        <label class="genero" id="mujer">Mujer</label>
+                        <input type="radio">
+                        <label class="genero" id="hombre">Hombre</label>
+                        <input type="radio">
+                        <label class="genero" id="personalizado">Personalizado</label>
+                    </div>
+                    <div><img src="img/duda.png" class="img_duda"></div>  
+                </div>
+                <div id="cnt_condiciones">
+                    <div><p id="p_texto_condiciones">Al hacer clic en Registrarte, aceptas las Condiciones, la Política de datos y la Política de cookies. Es posible que te enviemos notificaciones por SMS que podrás desactivar cuando quieras.</p></div>
+                    <div><input type="button" id="btn_registrar" value="Registrarte"></div>
+                    <div id="cnt_texto_final"><p>Crea una página para un personaje público, un grupo de música o un negocio.</p></div>
+                </div>
+                <div id="cnt_ingreso_responsivo">
+                    <div id="cnt_correo_responsivo">
+                        <input class="acceso_responsivo "type="mail" placeholder="Número de móvil o correo electrónico">                   
+                    </div>
+                    <div id="cnt_contrasena_responsivo">
+                        <input class="acceso_responsivo" type="mail" placeholder="Contraseña">                   
+                    </div>
+                    <div id="cnt_btn_entrar_responsivo">
+                        <input type="button" value="Entrar">
+                    </div>
+                    <div id="cnt_separacion_responsivo">
+                        <div class="linea_divisoria_responsivo"></div>
+                        <div> o </div>
+                        <div class="linea_divisoria_responsivo"></div>    
+                    </div>
+                    <div id="cnt_btn_registrar_responsivo">
+                        <input id="btn_registrar_responsivo" type="button" value="Crear nueva cuenta">
+                    </div>
+                    <div id="cnt_linea_divisoria">
+                        <ul>
+                            <li><a href="#">¿Has olvidado la contraseña?</a></li>
+                            <li><label> - </label></li>
+                            <li><a href="#">Servicio de ayuda</a></li>
+                        </ul>
+                    </div>
+                    <div id="cnt_opciones_responsivo">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">Español (España)</a></td>
+                                    <td><a href="#">English (US)</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Français (France)</a></td>
+                                    <td><a href="#">Português (Brasil)</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Deutsch</a></td>
+                                    <td><a href="#">Svenska</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">العربية</a></td>
+                                    <td><img src="img/mas.png" id="img_mas"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                                <div>
+                <div id="cnt_firma_facebook">Facebook © 2019</div>
+            </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor inferior -->
+        <div id="cnt_inferior">
+            <div id="cnt_paises">
+                <div class="paises" id="">Español (España)</div>
+                <div class="paises" id="">English (US)</div>
+                <div class="paises" id="">Français (France)</div>
+                <div class="paises" id="">Português (Brasil)</div>
+                <div class="paises" id="">Deutsch</div>
+                <div class="paises" id="">Italiano</div>
+                <div class="paises" id="">中文(简体)</div>
+                <div class="paises" id="">Svenska</div>
+                <div class="paises" id="">العربية</div>
+                <div class="paises" id="">हिन्दी</div>
+                <div class="paises" id="">日本語</div>                
+                <div class="paises" id=""><img src="img/mas.png" id="img_mas"/></div>                
+
+            </div>
+            <div id="cnt_separacion"></div>
+            <div id="cnt_opciones">
+                <div class="opciones ">Registrarte</div>
+                <div class="opciones ">Entrar</div>
+                <div class="opciones ">Messenger</div>
+                <div class="opciones ">Facebook Lite</div>
+                <div class="opciones ">Personas</div>
+                <div class="opciones ">Páginas</div>
+                <div class="opciones ">Categorías de páginas</div>
+                <div class="opciones ">Lugares</div>
+                <div class="opciones ">Juegos</div>
+                <div class="opciones ">Lugares</div>
+                <div class="opciones ">Marketplace</div>
+                <div class="opciones ">Grupos</div>
+                <div class="opciones ">Instagram</div>
+                <div class="opciones ">Local</div>
+                <div class="opciones ">Recaudaciones de fondos</div>
+                <div class="opciones ">Servicios</div>
+                <div class="opciones ">Información</div>
+                <div class="opciones ">Crear anuncio</div>
+                <div class="opciones ">Crear página</div>
+                <div class="opciones ">Desarrolladores</div>
+                <div class="opciones ">Empleo</div>
+                <div class="opciones ">Privacidad</div>
+                <div class="opciones ">Cookies</div>
+                <div class="opciones ">Gestión de anuncios</div>
+                <div class="opciones ">Condiciones</div>
+                <div class="opciones ">Ayuda</div>
+            </div>
+
+            <div>
+                <div id="cnt_firma_facebook">Facebook © 2019</div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
